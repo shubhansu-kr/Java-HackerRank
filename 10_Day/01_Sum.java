@@ -20,9 +20,8 @@ class Solution {
         if(sum != 0){
             System.out.print(sum);
         }
-        
-        // else {
-        //     System.out.print("NO OUTPUT");
-        // }
+        else {
+            System.out.print("NO OUTPUT");
+        }
     }
 }
