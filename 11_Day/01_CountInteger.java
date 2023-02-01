@@ -6,8 +6,16 @@ class Solution {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         
-        String num = sc.nextLine();
-        System.out.println(num.length());
+        long l = sc.nextLong();
+        if (l < 0 || l > 2147483647) {
+            System.out.println("Invalid Number");
+        }
+        int len = 0;
+        while(l > 0){
+            ++len;
+            l /= 10;
+        }
+        System.out.println(len);
     }
 }
 
