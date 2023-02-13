@@ -45,9 +45,9 @@ class Solution {
         double []avgMarks = Obj.averageMarks(marks);
         
         for (int i = 0; i < avgMarks.length; i++) {
-            if (i == n-1) {
-                System.out.print(avgMarks[i]);
-                break;
+            if (n == 1) {
+                System.out.print((int)avgMarks[i] + " ");
+                continue;
             }
             System.out.print(avgMarks[i] + " ");
         }
