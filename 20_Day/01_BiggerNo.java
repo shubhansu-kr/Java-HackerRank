@@ -1,3 +1,5 @@
+// https://www.hackerrank.com/contests/cse310-26699-day21/challenges/week5-14591-2
+
 import java.util.*;
 
 class Solution {
@@ -12,6 +14,8 @@ class Solution {
 
         if (a <= 10 || a >= 1000 || b <= 10 || b >= 1000){
             System.out.println("Invalid Input");
+            sc.close();
+            return;
         }
 
         Solution Obj = new Solution();

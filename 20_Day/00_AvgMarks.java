@@ -1,3 +1,5 @@
+// https://www.hackerrank.com/contests/cse310-26699-day21/challenges/w5-p2-16920
+
 import java.util.*;
 
 class Solution {
@@ -25,6 +27,7 @@ class Solution {
 
         return avgMarks;
     }
+
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         
@@ -40,9 +43,13 @@ class Solution {
 
         Solution Obj = new Solution();
         double []avgMarks = Obj.averageMarks(marks);
-
-        for (double d : avgMarks) {
-            System.out.print(d + " ");
+        
+        for (int i = 0; i < avgMarks.length; i++) {
+            if (i == n-1) {
+                System.out.print(avgMarks[i]);
+                break;
+            }
+            System.out.print(avgMarks[i] + " ");
         }
 
         sc.close();     
