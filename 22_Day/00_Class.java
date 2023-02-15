@@ -12,9 +12,9 @@ class Solution {
         int ch = sc.nextInt();
 
         if (ch == 1) {
-            name = sc.next();
             while(true) {
                 if (regNo > 0) break;
+                name = sc.next();
                 regNo = sc.nextInt();
             }
         }
