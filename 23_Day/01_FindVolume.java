@@ -3,9 +3,10 @@
 import java.util.*;
 
 class Volumes {
-    float pi = 3.14f;
-    float ballVol, cycVol, rectVol;
-
+    double pi = 3.14;
+    double ballVol, cycVol;
+    int rectVol;
+    
     void volume(int r) {
         ballVol = pi*r*r*r;
     }
