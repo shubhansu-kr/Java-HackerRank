@@ -1,15 +1,16 @@
-class test {
-    final String PassportNo;
-    test() {
-        PassportNo = "425245242";
-        
-        System.out.println(PassportNo);
-    }
-}
+// 
+
+import java.util.*;
 
 class Solution {
-    public static void main(String[] args) {
-        test t = new test();
-        System.out.println(t.PassportNo);
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        
+        int p = 11;
+        String num = "A" + p;
+        
+        System.out.println(num);
+
+        sc.close();
     }
 }
