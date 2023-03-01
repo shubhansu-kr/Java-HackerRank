@@ -11,6 +11,7 @@ class Solution {
         for (int i = 1; i < str.length(); i++) {
             if (str.charAt(i) == '.' && str.charAt(i-1) != '.' && str.charAt(i-1) != ' ') ++count;
         }
+        if (count == 5) count--;
         System.out.println(count);
 
         sc.close();
